@@ -34,12 +34,12 @@ func requestStart() bool {
 	resp, err := http.Get(urlPath("new"))
 	if err != nil {
 		fmt.Println(err)
-		return false
+		os.Exit(1)
 	}
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err)
-		return false
+		os.Exit(1)
 	}
 	defer resp.Body.Close()
 	fmt.Println(string(body))
