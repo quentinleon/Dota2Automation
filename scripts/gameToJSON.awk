@@ -40,6 +40,7 @@ BEGIN{
 	}
 
 	# other
+	if($0 ~ /Building: npc_dota_.*_tower/){towers[i++] = $2}
 	if($0 ~ /Match signout:  duration[0-9]*/){gameDuration = $5};
 	if($0 ~ /good guys win = [01]/){
 		if($11 == 1){winner = "goodguys"}
@@ -126,6 +127,14 @@ END{
 	printf "\"matchDate\" : \"%s\",\n", matchDate
 	printf "\"gameDuration\": %d,\n", gameDuration
 	printf "\"runTime\": %d,\n", systime() - beginTime
+	printf "\"towerKILL\": ["
+	for(i = 0; towers[i]; i++){
+		printf "\"" towers[i] "\""
+		if(towers[i + 1]) {
+			printf ", "
+		}
+	}
+	printf "]\n"
 	printf "\"winner\" : \"%s\",\n", winner
 	print "\"numPlayersGood\" : " numPlayersGood ","
 	print "\"numPlayersBad\" : " numPlayersBad ","

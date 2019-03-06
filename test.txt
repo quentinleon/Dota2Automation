@@ -1,0 +1,1258 @@
+ 0/64 on map dota
+CSteam3Client::Activate() took 2.188031 msec
+---------------
+Path ID:             File Path:
+ADDONS               "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota_addons\"
+CONTENT              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\content\dota\"
+CONTENT              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\content\core\"
+CONTENTADDONS        "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\content\dota_addons\"
+CONTENTROOT          "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\content\"
+DEFAULT_WRITE_PATH   "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk
+DEFAULT_WRITE_PATH   "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\"
+EXECUTABLE_PATH      "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\bin\win64\"
+EXECUTABLE_PATH      "c:\program files (x86)\steam\steamapps\common\dota 2 beta\game\bin\"
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\pak01.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\pak01.vpk
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\shaders_pc.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\shaders_pc.vpk
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\shaders_pc.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\shaders_pc.vpk
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\"
+GAME                 "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\"
+GAMEBIN              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\bin\win64\"
+GAMEBIN              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\bin\"
+GAMEBIN              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\bin\win64\"
+GAMEBIN              "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\bin\"
+GAMEROOT             "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\"
+MOD                  "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\pak01.vpk
+MOD                  "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\"
+PLATFORM             "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\pak01.vpk" (vpk) C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\pak01.vpk
+PLATFORM             "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\core\"
+SHADER_SOURCE        "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\dota\"
+SHADER_SOURCE        "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\core\"
+SHADER_SOURCE        "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\dota_addons\"
+SHADER_SOURCE        "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\dota_core\"
+SHADER_SOURCE_MOD    "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\dota\"
+SHADER_SOURCE_ROOT   "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\src\shaders\"
+command line arguments:
+-steam +engine_experimental_drop_frame_ticks 1 +voice_fadeouttime 0 -dedicated -high -fill_with_bots +exec autoexec.cfg
+Network System Initialized
+10.10.114.10: {CAE7CC2F-EFB8-4328-92CB-F9056A9674A3} Intel(R) Dual Band Wireless-AC 8265
+Physics Console Communications is not initialized
+Game supporting (4) split screen players
+CEntitySystem::BuildEntityNetworking (parallel build of server) took 212.075 msecs for 867 out of 885 classes
+Failed to load mutations file! scripts/battlepass/ti2018/mutations.txt
+Error loading resource file "soundevents/soundevents_test.vsndevts_c" (Error: ERROR_FILEOPEN)
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+name[ 0 ] changing from 'unnamed' to 'shiken'
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Attempted to set unknown configuration value <unknown>!
+Error in user configuration file
+name[ 0 ] changing from 'shiken' to 'shiken'
+CHostStateMgr::QueueNewRequest( Idle (console), 1 )
+SwitchToLoop console requested:  id [1] addons []
+Idle (console)
+execing autoexec.cfg
+Loading map "dota"
+CHostStateMgr::QueueNewRequest( Loading (dota), 2 )
+SwitchToLoop levelload requested:  id [2] addons []
+SV:  Level loading started for 'dota'
+Running SteamAPI_RunCallbacks for first time
+CL:  CLoopModeLevelLoad::MaybeSwitchToGameLoop switching to "game" loopmode with addons ()
+SwitchToLoop game requested:  id [2] addons []
+CNetworkGameServerBase::SetServerState (ss_dead -> ss_waitingforgamesessionmanifest)
+SV:  maxplayers set to 64
+Network socket 'server' opened on port 27015
+Initializing script VM...
+...done
+SV:  Executing dedicated server config file
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
+SV:  CGameRulesGameSystem::GameInit installed game rules
+Radiant bot scripting using script path C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\hero_selection.lua, scope name HeroSelectionScriptScope
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\team_desires.lua, scope name TeamDesiresScriptScope
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\team_desires.lua not found!
+Dire bot scripting using script path C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\hero_selection.lua, scope name HeroSelectionScriptScope
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\team_desires.lua, scope name TeamDesiresScriptScope
+LoadScript: C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\team_desires.lua not found!
+SV:  Spawn Server: dota
+CNetworkGameServerBase::SetServerState (ss_waitingforgamesessionmanifest -> ss_loading)
+SV:  Connection to Steam servers successful.
+SV:  ServerSteamID=[A:1:2634876936:12081] (90123882682189832).
+Gameserver logged on to Steam, assigned SteamID [A:1:2634876936:12081]
+SV:  VAC secure mode is activated.
+Unable to load grid nav: file not found for world prefabs/promotional_radiant_fountain
+Unable to load grid nav: file not found for world prefabs/promotional_dire_fountain
+CNetworkGameServerBase::SetServerState (ss_loading -> ss_active)
+SV:  IGameSystem::LoopActivateAllSystems
+HO:  IGameSystem::LoopActivateAllSystems
+Height map file (maps/prefabs/promotional_radiant_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
+Height map file (maps/prefabs/promotional_dire_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
+SV:  64 player server started
+Loading (dota)
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP'
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
+CDOTA_PlayerResource: Adding player SteamID 90071996842377216 to slot 0 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 0:[I:0:0] "@42SiliconValley (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377217 to slot 1 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 1:[I:0:0] "@QwolfBLG (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377218 to slot 2 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 2:[I:0:0] "@Lyd (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377219 to slot 3 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 3:[I:0:0] "@mschroed098 (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377220 to slot 4 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 4:[I:0:0] "@2ne1ugly1 (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377221 to slot 5 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 5:[I:0:0] "@42SiliconValley (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377222 to slot 6 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 6:[I:0:0] "@QwolfBLG (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377223 to slot 7 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 7:[I:0:0] "@Lyd (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377224 to slot 8 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 8:[I:0:0] "@mschroed098 (Bot)"
+CDOTA_PlayerResource: Adding player SteamID 90071996842377225 to slot 9 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 9:[I:0:0] "@2ne1ugly1 (Bot)"
+Gamemode = 0
+selecting radiant
+PR:SetSelectedHero 0:[I:0:0] npc_dota_hero_bane(3)
+PR:SetSelectedHero 1:[I:0:0] npc_dota_hero_chaos_knight(81)
+PR:SetSelectedHero 2:[I:0:0] npc_dota_hero_juggernaut(8)
+PR:SetSelectedHero 3:[I:0:0] npc_dota_hero_lich(31)
+PR:SetSelectedHero 4:[I:0:0] npc_dota_hero_ogre_magi(84)
+Script function 'Think' took 2.442ms
+Gamemode = 0
+selecting dire
+PR:SetSelectedHero 5:[I:0:0] npc_dota_hero_drow_ranger(6)
+PR:SetSelectedHero 6:[I:0:0] npc_dota_hero_kunkka(23)
+PR:SetSelectedHero 7:[I:0:0] npc_dota_hero_zuus(22)
+PR:SetSelectedHero 8:[I:0:0] npc_dota_hero_earthshaker(7)
+PR:SetSelectedHero 9:[I:0:0] npc_dota_hero_nevermore(11)
+Script function 'Think' took 2.312ms
+Received server welcome from GC.
+CMsgClientWelcome subscribed: 0 up-to-date, 0 out-of-date
+GC Connection established for server version 3367
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD'
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
+m_flPreGameStartTime set to 1.07
+m_flStateTransitionTime set to 91.07
+Server:  Running [10.10.114.10:27015]
+Client:  Disconnected
+----- Status -----
+@ Current  :  game
+source   : console
+hostname : Dota 2
+spawn    : 1
+version  : 47/47 8159 secure  public
+steamid  : [A:1:2634876936:12081] (90123882682189832)
+udp/ip   : 10.10.114.10:27015 (public 64.62.224.29:27015)
+os/type  : Windows dedicated
+players  : 0 humans, 10 bots (0 max) (not hibernating) (unreserved)
+---------spawngroups----
+loaded spawngroup(  1)  : SV:  [1: dota | main lump | mapload]
+loaded spawngroup(  2)  : SV:  [2: prefabs/promotional_radiant_fountain | main lump | mapload | point_prefab]
+loaded spawngroup(  3)  : SV:  [3: prefabs/promotional_dire_fountain | main lump | mapload | point_prefab]
+loaded spawngroup(  4)  : SV:  [4: dota | world_layer_dire_base | <none> | world_layer]
+loaded spawngroup(  5)  : SV:  [5: dota | world_layer_radiant_base | <none> | world_layer]
+loading spawngroup(  6)  : SV:  [6: <none> | npc_dota_hero_bane]
+loading spawngroup(  7)  : SV:  [7: <none> | npc_dota_hero_chaos_knight]
+loading spawngroup(  8)  : SV:  [8: <none> | npc_dota_hero_juggernaut]
+loading spawngroup(  9)  : SV:  [9: <none> | npc_dota_hero_lich]
+loading spawngroup( 10)  : SV:  [10: <none> | npc_dota_hero_ogre_magi]
+loading spawngroup( 11)  : SV:  [11: <none> | npc_dota_hero_drow_ranger]
+loading spawngroup( 12)  : SV:  [12: <none> | npc_dota_hero_kunkka]
+loading spawngroup( 13)  : SV:  [13: <none> | npc_dota_hero_zuus]
+loading spawngroup( 14)  : SV:  [14: <none> | npc_dota_hero_earthshaker]
+loading spawngroup( 15)  : SV:  [15: <none> | npc_dota_hero_nevermore]
+loading spawngroup( 16)  : SV:  [16: <none> | npc_dota_roshan]
+---------players--------
+  id     time ping loss      state   rate adr name
+   1      BOT    0    0     active      0 '@42SiliconValley (Bot)'
+   2      BOT    0    0     active      0 '@QwolfBLG (Bot)'
+   3      BOT    0    0     active      0 '@Lyd (Bot)'
+   4      BOT    0    0     active      0 '@mschroed098 (Bot)'
+   5      BOT    0    0     active      0 '@2ne1ugly1 (Bot)'
+   6      BOT    0    0     active      0 '@42SiliconValley (Bot)'
+   7      BOT    0    0     active      0 '@QwolfBLG (Bot)'
+   8      BOT    0    0     active      0 '@Lyd (Bot)'
+   9      BOT    0    0     active      0 '@mschroed098 (Bot)'
+  10      BOT    0    0     active      0 '@2ne1ugly1 (Bot)'
+GameState: DOTA_GAMERULES_STATE_PRE_GAME Times: Transition=91.07 Current=1.30
+#end
+Skill: bane_brain_sap  upgraded!
+Script function 'Think' on bot npc_dota_hero_bane took 4.000ms
+Skill: chaos_knight_chaos_bolt  upgraded!
+Script function 'Think' on bot npc_dota_hero_chaos_knight took 2.434ms
+Skill: juggernaut_blade_fury  upgraded!
+Skill: lich_frost_shield  upgraded!
+Skill: ogre_magi_ignite  upgraded!
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.151ms
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
+m_flGameStartTime set to 91.10
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: bane_nightmare  upgraded!
+Skill: ogre_magi_fireblast  upgraded!
+Skill: ogre_magi_ignite  upgraded!
+Skill: juggernaut_blade_dance  upgraded!
+Skill: lich_frost_nova  upgraded!
+Game code tried to execute invalid order (19). Target NPC is dead.
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.345ms
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.053ms
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.076ms
+Script Runtime Error: ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: attempt to call global 'SpellRetreat' (a nil value)
+stack traceback:
+        ...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:221: in function <...2 beta\game\dota\scripts\vscripts\bots\bot_ogre_magi.lua:201>
+Message count limit of 10 hit. Subsequent duplicate messages will be squelched.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/chaos_knight/chaos_knight.vmdl
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_reality_rift  upgraded!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/lich/lich.vmdl
+Skill: lich_frost_nova  upgraded!
+Skill: ogre_magi_fireblast  upgraded!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/chaos_knight/chaos_knight.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/bane/bane.vmdl
+Skill: chaos_knight_chaos_strike  upgraded!
+Game code tried to execute invalid order (14). Unit does not have enough mana to cast ability.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/lich/lich.vmdl
+Skill: chaos_knight_chaos_bolt  upgraded!
+Skill: juggernaut_blade_fury  upgraded!
+Skill: bane_brain_sap  upgraded!
+Skill: juggernaut_blade_dance  upgraded!
+Skill: lich_sinister_gaze  upgraded!
+Skill: ogre_magi_ignite  upgraded!
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.096ms
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/ogre_magi/ogre_magi.vmdl
+Client tried to execute invalid order (20). Unit is dead.
+Skill: juggernaut_blade_fury  upgraded!
+Skill: ogre_magi_multicast  upgraded!
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.036ms
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: juggernaut_omni_slash  upgraded!
+Skill: lich_frost_nova  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/bane/bane.vmdl
+Skill: bane_enfeeble  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_chaos_strike  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/ogre_magi/ogre_magi.vmdl
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (84). Ability is inactive.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: bane_brain_sap  upgraded!
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Client tried to execute invalid order (26). Target can't be seen by the unit's team.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: bane_fiends_grip  upgraded!
+Skill: chaos_knight_phantasm  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Skill: juggernaut_blade_fury  upgraded!
+Skill: lich_chain_frost  upgraded!
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Skill: ogre_magi_ignite  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Building: npc_dota_goodguys_tower1_top destroyed at 806.403503.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Building: npc_dota_goodguys_tower1_mid destroyed at 845.493958.
+CSoundOpGameSystem::StopSoundEvent: Attempting to stop non-existent soundevent: hero_Crystal.frostbite
+Skill: juggernaut_blade_dance  upgraded!
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Skill: lich_frost_nova  upgraded!
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: bane_brain_sap  upgraded!
+Skill: chaos_knight_reality_rift  upgraded!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_fx on model models/heroes/juggernaut/juggernaut.vmdl
+Skill: ogre_magi_fireblast  upgraded!
+Building: npc_dota_goodguys_tower1_bot destroyed at 927.107361.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Skill: lich_frost_shield  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_chaos_bolt  upgraded!
+Script function 'Think' on bot npc_dota_hero_chaos_knight took 2.000ms
+Skill: juggernaut_blade_dance  upgraded!
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_chaos_bolt  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: bane_nightmare  upgraded!
+Skill: special_bonus_all_stats_5  upgraded!
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: ogre_magi_fireblast  upgraded!
+Building: npc_dota_badguys_tower1_bot destroyed at 1091.567139.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: lich_frost_shield  upgraded!
+Game code tried to execute invalid order (20). Unit is dead.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_hp_200  upgraded!
+Skill: special_bonus_cast_range_100  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_all_stats_5  upgraded!
+Script function 'Think' on bot npc_dota_hero_juggernaut took 3.053ms
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Building: npc_dota_goodguys_tower2_mid destroyed at 1195.441772.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: ogre_magi_bloodlust  upgraded!
+Script function 'Think' on bot npc_dota_hero_ogre_magi took 2.597ms
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_reality_rift  upgraded!
+Skill: bane_nightmare  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_phantasm  upgraded!
+Skill: special_bonus_cast_range_100  upgraded!
+Skill: chaos_knight_chaos_strike  upgraded!
+Skill: bane_nightmare  upgraded!
+Skill: lich_frost_shield  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Building: npc_dota_goodguys_tower2_top destroyed at 1322.843994.
+Script function 'Think' on bot npc_dota_hero_juggernaut took 8.661ms
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Skill: ogre_magi_multicast  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Skill: juggernaut_healing_ward  upgraded!
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Game code tried to execute invalid order (36). Can't attack or cast on target, target is unselectable.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: juggernaut_omni_slash  upgraded!
+Skill: lich_chain_frost  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: lich_sinister_gaze  upgraded!
+Script function 'Think' on bot npc_dota_hero_lich took 2.377ms
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: bane_fiends_grip  upgraded!
+Skill: juggernaut_healing_ward  upgraded!
+Building: npc_dota_badguys_tower1_top destroyed at 1443.081299.
+Skill: chaos_knight_reality_rift  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Building: npc_dota_badguys_tower1_mid destroyed at 1501.866943.
+Skill: ogre_magi_bloodlust  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: bane_enfeeble  upgraded!
+Skill: special_bonus_strength_15  upgraded!
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_chaos_strike  upgraded!
+Skill: lich_sinister_gaze  upgraded!
+Skill: bane_enfeeble  upgraded!
+Skill: juggernaut_healing_ward  upgraded!
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (74). Unit can't perform command, unit has commands restricted.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (36). Can't attack or cast on target, target is unselectable.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_attack_speed_20  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Skill: ogre_magi_bloodlust  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_exp_boost_40  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: juggernaut_healing_ward  upgraded!
+Building: npc_dota_badguys_tower2_mid destroyed at 1843.383545.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: chaos_knight_phantasm  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Building: npc_dota_badguys_tower3_mid destroyed at 1889.205688.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: special_bonus_attack_damage_120  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Building: npc_dota_goodguys_tower3_mid destroyed at 1962.675415.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Building: npc_dota_goodguys_melee_rax_mid destroyed at 1976.756714.
+Building: npc_dota_goodguys_range_rax_mid destroyed at 1979.064575.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Skill: bane_enfeeble  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_hp_300  upgraded!
+Skill: special_bonus_gold_income_25  upgraded!
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: ogre_magi_bloodlust  upgraded!
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: ogre_magi_multicast  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Skill: lich_sinister_gaze  upgraded!
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: bane_fiends_grip  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_movement_speed_50  upgraded!
+Building: npc_dota_badguys_range_rax_mid destroyed at 2160.516113.
+Building: npc_dota_badguys_tower2_top destroyed at 2166.402832.
+Building: npc_dota_badguys_tower2_bot destroyed at 2166.937988.
+Building: npc_dota_badguys_melee_rax_mid destroyed at 2178.778320.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: juggernaut_omni_slash  upgraded!
+Skill: special_bonus_unique_chaos_knight_2  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Building: npc_dota_badguys_tower3_top destroyed at 2257.914551.
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 136 is outside of cell bounds (0->128) @(18645.039063 -5718.321289 384.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+1178:item_ring_of_tarrasque::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell 140 is outside of cell bounds (0->128) @(19690.701172 -6272.000000 512.000000)
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_strength_40  upgraded!
+Game code tried to execute invalid order (15). Ability is still in cooldown.
+Client tried to execute invalid order (20). Unit is dead.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+ping pong 4 Hero_OgreMagi.Fireblast.x3
+Skill: lich_chain_frost  upgraded!
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_unique_bane_3  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_armor_10  upgraded!
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (26). Target can't be seen by the unit's team.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Skill: special_bonus_cast_range_150  upgraded!
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Building: npc_dota_badguys_fillers destroyed at 2787.953369.
+Building: npc_dota_badguys_tower4 destroyed at 2788.588867.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Game code tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (55). Can't use item, it has no charges.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Script function 'Think' on bot npc_dota_hero_chaos_knight took 8.916ms
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (84). Ability is inactive.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Building: npc_dota_badguys_tower3_bot destroyed at 2881.037109.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: special_bonus_unique_juggernaut_2  upgraded!
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Skill: special_bonus_unique_ogre_magi_2  upgraded!
+Building: npc_dota_badguys_range_rax_top destroyed at 2983.854004.
+Building: npc_dota_badguys_melee_rax_top destroyed at 2988.503174.
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+ping pong 4 Hero_OgreMagi.Fireblast.x3
+ping pong 2 Hero_OgreMagi.Fireblast.x1
+ping pong 3 Hero_OgreMagi.Fireblast.x2
+ping pong 4 Hero_OgreMagi.Fireblast.x3
+Client tried to execute invalid order (20). Unit is dead.
+Game code tried to execute invalid order (20). Unit is dead.
+Client tried to execute invalid order (3). Unrecognized order identifier.
+Game code tried to execute invalid order (19). Target NPC is dead.
+Client tried to execute invalid order (20). Unit is dead.
+Building: npc_dota_badguys_tower4 destroyed at 3024.693115.
+Building: npc_dota_badguys_fillers destroyed at 3033.054932.
+Building: npc_dota_badguys_fillers destroyed at 3041.784668.
+Building: npc_dota_badguys_fillers destroyed at 3044.125977.
+Building: npc_dota_badguys_fort destroyed at 3048.072754.
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_POST_GAME'
+CDOTAUserMsg_PlayerMMR check: lobbyType=-1, GameEndReason=0
+CDOTAGCServerSystem::MatchSignOut gathering sign out stats. Duration in minutes = 50.801773
+   Player 0 Account 0 TotalGold = 20430.000000 TotalXP = 27236.000000 nGoldPerMinute = 402 nXPPerMinute = 656
+   Player 0 Account 0 TotalGold = 35469.000000 TotalXP = 27873.000000 nGoldPerMinute = 698 nXPPerMinute = 760
+   Player 0 Account 0 TotalGold = 22122.000000 TotalXP = 27242.000000 nGoldPerMinute = 435 nXPPerMinute = 559
+   Player 0 Account 0 TotalGold = 18099.000000 TotalXP = 20413.000000 nGoldPerMinute = 356 nXPPerMinute = 401
+   Player 0 Account 0 TotalGold = 17962.000000 TotalXP = 27870.000000 nGoldPerMinute = 353 nXPPerMinute = 561
+   Player 0 Account 0 TotalGold = 19860.000000 TotalXP = 28063.000000 nGoldPerMinute = 390 nXPPerMinute = 615
+   Player 0 Account 0 TotalGold = 18869.000000 TotalXP = 25205.000000 nGoldPerMinute = 371 nXPPerMinute = 496
+   Player 0 Account 0 TotalGold = 20393.000000 TotalXP = 27264.000000 nGoldPerMinute = 401 nXPPerMinute = 654
+   Player 0 Account 0 TotalGold = 15088.000000 TotalXP = 23614.000000 nGoldPerMinute = 296 nXPPerMinute = 464
+   Player 0 Account 0 TotalGold = 29118.000000 TotalXP = 27906.000000 nGoldPerMinute = 573 nXPPerMinute = 729
+Match signout:  duration = 3048 (3048.106201) good guys win = 1
+  Match start date: Wed Feb 27 15:22:32 2019
+  Num players on teams:  Good: 5  Bad: 5
+Team 0 Player 0 m_unAccountID = 0  Items: 180, 232, 254, 108, 100, 58, 0, 0, 0
+  LastHit = 93  Deny = 24  ClaimedMiss = 34  ClaimedDeny = 0  Miss = 44
+  Level: 25 Gold: 2656  KDA: 5 / 14 / 17
+  Actual Player Damage: 19181 Actual Building Damage: 3124 Actual Healing: 0
+  Scaled Player Damage: 10004 Scaled Building Damage: 1959 Scaled Healing: 0
+  XP per min: 402  Gold per min: 656  Claimed Farm: 7012  Support Gold 50
+Team 0 Player 1 m_unAccountID = 0  Items: 63, 252, 112, 147, 114, 160, 0, 0, 0
+  LastHit = 248  Deny = 28  ClaimedMiss = 26  ClaimedDeny = 0  Miss = 30
+  Level: 25 Gold: 9185  KDA: 21 / 10 / 7
+  Actual Player Damage: 40980 Actual Building Damage: 7405 Actual Healing: 0
+  Scaled Player Damage: 23611 Scaled Building Damage: 3909 Scaled Healing: 0
+  XP per min: 698  Gold per min: 760  Claimed Farm: 13564  Support Gold 0
+Team 0 Player 2 m_unAccountID = 0  Items: 145, 145, 63, 145, 145, 11, 0, 0, 0
+  LastHit = 192  Deny = 7  ClaimedMiss = 29  ClaimedDeny = 0  Miss = 14
+  Level: 25 Gold: 846  KDA: 7 / 13 / 4
+  Actual Player Damage: 19679 Actual Building Damage: 1009 Actual Healing: 0
+  Scaled Player Damage: 11056 Scaled Building Damage: 580 Scaled Healing: 0
+  XP per min: 435  Gold per min: 559  Claimed Farm: 10529  Support Gold 0
+Team 0 Player 3 m_unAccountID = 0  Items: 214, 232, 254, 108, 116, 0, 0, 0, 0
+  LastHit = 113  Deny = 21  ClaimedMiss = 43  ClaimedDeny = 1  Miss = 50
+  Level: 21 Gold: 1662  KDA: 6 / 17 / 4
+  Actual Player Damage: 13668 Actual Building Damage: 2110 Actual Healing: 0
+  Scaled Player Damage: 10227 Scaled Building Damage: 1120 Scaled Healing: 0
+  XP per min: 356  Gold per min: 401  Claimed Farm: 9716  Support Gold 0
+Team 0 Player 4 m_unAccountID = 0  Items: 180, 232, 108, 254, 100, 58, 0, 0, 0
+  LastHit = 113  Deny = 23  ClaimedMiss = 74  ClaimedDeny = 4  Miss = 58
+  Level: 25 Gold: 1216  KDA: 4 / 12 / 10
+  Actual Player Damage: 17055 Actual Building Damage: 782 Actual Healing: 0
+  Scaled Player Damage: 10113 Scaled Building Damage: 370 Scaled Healing: 0
+  XP per min: 353  Gold per min: 561  Claimed Farm: 10925  Support Gold 0
+Team 1 Player 0 m_unAccountID = 0  Items: 8, 249, 147, 56, 21, 63, 94, 16, 2
+  LastHit = 161  Deny = 29  ClaimedMiss = 12  ClaimedDeny = 0  Miss = 35
+  Level: 25 Gold: 423  KDA: 13 / 10 / 17
+  Actual Player Damage: 25489 Actual Building Damage: 1768 Actual Healing: 0
+  Scaled Player Damage: 17473 Scaled Building Damage: 1029 Scaled Healing: 0
+  XP per min: 390  Gold per min: 615  Claimed Farm: 7657  Support Gold 0
+Team 1 Player 1 m_unAccountID = 0  Items: 112, 141, 29, 116, 4, 25, 0, 0, 36
+  LastHit = 186  Deny = 9  ClaimedMiss = 42  ClaimedDeny = 2  Miss = 18
+  Level: 24 Gold: 192  KDA: 8 / 7 / 15
+  Actual Player Damage: 16529 Actual Building Damage: 1664 Actual Healing: 0
+  Scaled Player Damage: 12217 Scaled Building Damage: 904 Scaled Healing: 0
+  XP per min: 371  Gold per min: 496  Claimed Farm: 9965  Support Gold 50
+Team 1 Player 2 m_unAccountID = 0  Items: 121, 1, 180, 0, 0, 0, 0, 0, 0
+  LastHit = 159  Deny = 10  ClaimedMiss = 53  ClaimedDeny = 5  Miss = 26
+  Level: 25 Gold: 8617  KDA: 12 / 10 / 24
+  Actual Player Damage: 39420 Actual Building Damage: 1416 Actual Healing: 0
+  Scaled Player Damage: 23165 Scaled Building Damage: 766 Scaled Healing: 0
+  XP per min: 401  Gold per min: 654  Claimed Farm: 10391  Support Gold 0
+Team 1 Player 3 m_unAccountID = 0  Items: 42, 180, 1, 100, 92, 116, 36, 0, 0
+  LastHit = 97  Deny = 26  ClaimedMiss = 60  ClaimedDeny = 10  Miss = 23
+  Level: 23 Gold: 34  KDA: 5 / 12 / 20
+  Actual Player Damage: 19447 Actual Building Damage: 493 Actual Healing: 132
+  Scaled Player Damage: 12749 Scaled Building Damage: 284 Scaled Healing: 97
+  XP per min: 296  Gold per min: 464  Claimed Farm: 7261  Support Gold 1875
+Team 1 Player 4 m_unAccountID = 0  Items: 141, 116, 168, 147, 139, 29, 0, 2, 18
+  LastHit = 271  Deny = 42  ClaimedMiss = 49  ClaimedDeny = 4  Miss = 27
+  Level: 25 Gold: 141  KDA: 25 / 6 / 9
+  Actual Player Damage: 61292 Actual Building Damage: 3660 Actual Healing: 0
+  Scaled Player Damage: 31811 Scaled Building Damage: 2235 Scaled Healing: 0
+  XP per min: 573  Gold per min: 729  Claimed Farm: 14122  Support Gold 0
+KILLEATER: Signing out with 0 adjustments
+KILLEATER: Message has 0 player blocks
+Not submitting stats. Both teams must have human players.
+match_id: 0
+region_id: 4294967295
+cluster_id: 0
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_DISCONNECT'
+ReconnectInfo established for playerid=0
+PR:SetConnectionState 0:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @42SiliconValley (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+51: npc_dota_courier
+65: npc_dota_hero_bane
+ReconnectInfo established for playerid=1
+PR:SetConnectionState 1:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @QwolfBLG (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+54: npc_dota_hero_chaos_knight
+ReconnectInfo established for playerid=2
+PR:SetConnectionState 2:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @Lyd (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+39: npc_dota_hero_juggernaut
+ReconnectInfo established for playerid=3
+PR:SetConnectionState 3:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @mschroed098 (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+17: npc_dota_hero_lich
+ReconnectInfo established for playerid=4
+PR:SetConnectionState 4:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @2ne1ugly1 (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+60: npc_dota_hero_ogre_magi
+ReconnectInfo established for playerid=5
+PR:SetConnectionState 5:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @42SiliconValley (Bot) to DOTA_LEAVER_DISCONNECTED
+Client tried to execute invalid order (20). Unit is dead.
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+ReconnectInfo established for playerid=6
+PR:SetConnectionState 6:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @QwolfBLG (Bot) to DOTA_LEAVER_DISCONNECTED
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+5: npc_dota_hero_kunkka
+12: npc_dota_courier
+ReconnectInfo established for playerid=7
+PR:SetConnectionState 7:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @Lyd (Bot) to DOTA_LEAVER_DISCONNECTED
+Client tried to execute invalid order (20). Unit is dead.
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+ReconnectInfo established for playerid=8
+PR:SetConnectionState 8:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @mschroed098 (Bot) to DOTA_LEAVER_DISCONNECTED
+Client tried to execute invalid order (20). Unit is dead.
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
+ReconnectInfo established for playerid=9
+PR:SetConnectionState 9:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player @2ne1ugly1 (Bot) to DOTA_LEAVER_DISCONNECTED
+Client tried to execute invalid order (20). Unit is dead.
+CDOTAGamerules:Pause = false PlayerId=-1 fUnpauseDelay=0.00 fPauseDelay=-1.00
