@@ -13,12 +13,12 @@ import (
 	"github.com/korovkin/limiter"
 )
 
-const usage = "usage: ./client ip port docker:volume"
+const usage = "usage: ./client ip port"
 const maxCont = 4
 
 var ip string
 var port string
-var volume string
+var volume = "~/dota:/dota"
 var cont = 0
 var done = false
 
@@ -78,13 +78,12 @@ func runGame() {
 }
 
 func main() {
-	if len(os.Args) < 4 {
+	if len(os.Args) != 3 {
 		fmt.Println(usage)
 		return
 	}
 	ip = os.Args[1]
 	port = os.Args[2]
-	volume = os.Args[3]
 
 	limit := limiter.NewConcurrencyLimiter(4)
 	for !done {
