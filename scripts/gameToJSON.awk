@@ -183,5 +183,5 @@ END{
 			if (i < 5){printf ","};
 			printf "\n";
 		}
-	printf "}}";
+	print "}}";
 }
