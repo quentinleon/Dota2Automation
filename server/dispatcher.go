@@ -49,7 +49,7 @@ func main() {
 	for index, worker := range WORKERS {
 		fmt.Printf("Starting worker %d at %s\n", index+1, worker)
 		//fmt.Printf("%s %s %s %s %s %s %s\n", "ssh", worker, "./Dota2Automation/client/client", IP_ADDR, strconv.Itoa(PORT), MOUNT, "&> /dev/null")
-		cmd := exec.Command("ssh", worker, "./Dota2Automation/client/client", IP_ADDR, strconv.Itoa(PORT), "&> /dev/null")
+		cmd := exec.Command("ssh", worker, "./Dota2Automation/client/worker", IP_ADDR, strconv.Itoa(PORT), "&> /dev/null")
 		err = cmd.Start()
 		if err != nil {
 			log.Fatal(err)
