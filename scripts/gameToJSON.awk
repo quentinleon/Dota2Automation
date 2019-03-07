@@ -1,5 +1,5 @@
 BEGIN{
-	#beginTime = systime();
+	beginTime = systime();
 	mode = "goodguys";
 	items = 1;
 	lastHit = 2;
@@ -126,15 +126,15 @@ END{
 	print "{";
 	printf "\"matchDate\" : \"%s\",\n", matchDate
 	printf "\"gameDuration\": %d,\n", gameDuration
-	#printf "\"runTime\": %d,\n", systime() - beginTime
-	printf "\"buildingDIE\": ["
+	printf "\"runTime\": %d,\n", systime() - beginTime
+	printf "\"destroyedBuildings\": ["
 	for(i = 0; towers[i]; i++){
 		printf "\"" towers[i] "\""
 		if(towers[i + 1]) {
 			printf ", "
 		}
 	}
-	printf "]\n"
+	printf "],\n"
 	printf "\"winner\" : \"%s\",\n", winner
 	print "\"numPlayersGood\" : " numPlayersGood ","
 	print "\"numPlayersBad\" : " numPlayersBad ","

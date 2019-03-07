@@ -4,9 +4,11 @@ import (
 	"bytes"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"os/exec"
+	"os/user"
 	"strings"
 	"time"
 
@@ -18,7 +20,9 @@ const maxCont = 4
 
 var ip string
 var port string
-var volume = "~/dota:/dota"
+var homeDir string
+var volume = "/dota:/dota"
+var mountPath string
 var cont = 0
 var done = false
 
@@ -68,12 +72,14 @@ func postDone(s string) {
 
 func runGame() {
 	if requestStart() {
-		cmd, err := exec.Command("/usr/local/bin/docker", "run", "-v", volume, "dota").Output()
+		out, err := exec.Command("/usr/local/bin/docker", "run", "-v", mountPath, "arwn/dota").Output()
 		if err != nil {
 			fmt.Println(err)
+			os.Exit(1)
 		}
-		postDone(string(cmd)[:len(string(cmd))-1])
+		//postDone(string(cmd)[:len(string(cmd))-1])
 		/* post json file */
+		postDone(string(out))
 	}
 }
 
@@ -85,6 +91,12 @@ func main() {
 	ip = os.Args[1]
 	port = os.Args[2]
 
+	usr, err := user.Current()
+	if err != nil {
+		log.Fatal(err)
+	}
+	homeDir = usr.HomeDir
+	mountPath = homeDir + volume
 	limit := limiter.NewConcurrencyLimiter(4)
 	for !done {
 		limit.Execute(runGame)
