@@ -34,6 +34,36 @@ func urlPath(path string) string {
 	return strings.Join([]string{url(), path}, "/")
 }
 
+func populateBotDir(body []byte) {
+	os.RemoveAll(homeDir + "/dota/game/dota/scripts/vscripts/bots")
+	if err := ioutil.WriteFile("/tmp/bots.tar.gz", body, 0644); err != nil {
+		panic(err)
+	}
+	cmd := exec.Command("tar", "xpf", "/tmp/bots.tar.gz", "-C", homeDir+"/dota/game/dota/scripts/vscripts/")
+	err := cmd.Run()
+	if err != nil {
+		panic(err)
+	}
+
+}
+
+func aquireBots() {
+	resp, err := http.Get(urlPath("bots"))
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	if string(body) == "no" {
+		return
+	}
+	populateBotDir(body)
+}
+
 func requestStart() bool {
 	resp, err := http.Get(urlPath("new"))
 	if err != nil {
@@ -97,6 +127,9 @@ func main() {
 	}
 	homeDir = usr.HomeDir
 	mountPath = homeDir + volume
+
+	aquireBots()
+
 	limit := limiter.NewConcurrencyLimiter(4)
 	for !done {
 		limit.Execute(runGame)
