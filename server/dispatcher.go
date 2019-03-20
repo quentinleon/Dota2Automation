@@ -8,15 +8,24 @@ import (
 	"os"
 	"os/exec"
 	"strconv"
+	"strings"
 	"sync"
+	"time"
 )
 
 const IP_ADDR = "10.10.10.1"
 const PORT = 1042
-const MOUNT = "/Volumes/AOEU/dota/:/dota/"
 
-var WORKERS = []string{"dota2@10.10.10.2", "dota3@10.10.10.3", "dota4@10.10.10.4", "dota5@10.10.10.5", "dota6@10.10.10.6"} //"dota7@10.10.10.7", "dota8@10.10.10.8", "dota9@10.10.10.9"}
+const FIRST_WORKER = 2
+const LAST_WORKER = 15
 
+var workerTasks [LAST_WORKER + 1]int
+var workerCompleted [LAST_WORKER + 1]int
+
+var debug = false
+var dataPath = ""
+var botsPath = ""
+var requestedGames = 0
 var remainingGames = 0
 var runningGames = 0
 var completedGames = 0
@@ -29,26 +38,34 @@ func main() {
 		return
 	}
 	var err error
-	remainingGames, err = strconv.Atoi(args[1])
+	requestedGames, err = strconv.Atoi(args[1])
 	if err != nil {
-		PrintUsage(args[0])
+		log.Fatal(err)
 		return
 	}
 
-	fmt.Printf("Running %d DotA games...\n\n", remainingGames)
-	if remainingGames == 0 {
-		return
+	if len(args) > 2 {
+		botsPath = args[2]
+		PrepFiles()
 	}
-	//copy bot scripts to nfs and set up for bot games
+
+	fmt.Printf("Running %d DotA games...\n\n", requestedGames)
+	remainingGames = requestedGames
+
+	//make data directory
+	if requestedGames > 0 {
+		dataPath = "gamedata/game" + strconv.FormatInt(time.Now().Unix(), 10)
+		os.Mkdir(dataPath, 0777)
+	}
 
 	//start server
 	finished.Add(1)
 	go StartServer()
 
 	//spin up all clients
-	for index, worker := range WORKERS {
-		fmt.Printf("Starting worker %d at %s\n", index+1, worker)
-		//fmt.Printf("%s %s %s %s %s %s %s\n", "ssh", worker, "./Dota2Automation/client/client", IP_ADDR, strconv.Itoa(PORT), MOUNT, "&> /dev/null")
+	for i := FIRST_WORKER; i <= LAST_WORKER; i++ {
+		worker := GetWorkerIP(i)
+		fmt.Printf("Starting worker %s\n", worker)
 		cmd := exec.Command("ssh", worker, "./Dota2Automation/client/worker", IP_ADDR, strconv.Itoa(PORT), "&> /dev/null")
 		err = cmd.Start()
 		if err != nil {
@@ -65,16 +82,19 @@ func main() {
 func StartServer() {
 	http.HandleFunc("/new", HandleNew)
 	http.HandleFunc("/done", HandleDone)
+	http.HandleFunc("/bots", HandleBots)
 	http.HandleFunc("/", HandleUnknown)
-	http.ListenAndServe(":1042", nil)
+	http.ListenAndServe(":"+strconv.Itoa(PORT), nil)
 }
 
 func HandleNew(w http.ResponseWriter, r *http.Request) {
 	if remainingGames > 0 {
 		remainingGames--
 		runningGames++
+		workerTasks[IPToWorkerID(r.RemoteAddr)]++
 		fmt.Fprintf(w, "yes")
 		fmt.Printf("Worker %s starting new game.\n", r.RemoteAddr)
+		printStatus()
 	} else {
 		fmt.Fprintf(w, "no")
 	}
@@ -82,7 +102,9 @@ func HandleNew(w http.ResponseWriter, r *http.Request) {
 
 func HandleDone(w http.ResponseWriter, r *http.Request) {
 	runningGames--
+	workerTasks[IPToWorkerID(r.RemoteAddr)]--
 	completedGames++
+	workerCompleted[IPToWorkerID(r.RemoteAddr)]++
 	fmt.Printf("Worker %s finished game.\n", r.RemoteAddr)
 	//get json file
 	body, err := ioutil.ReadAll(r.Body)
@@ -90,17 +112,84 @@ func HandleDone(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 	filename := "game" + strconv.Itoa(completedGames) + ".json"
-	err = ioutil.WriteFile("testdata/"+filename, body, 0644)
+	err = ioutil.WriteFile(dataPath+"/"+filename, body, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
+	printStatus()
 	if remainingGames == 0 && runningGames == 0 {
 		finished.Done()
 	}
 }
 
+func HandleBots(w http.ResponseWriter, r *http.Request) {
+	fmt.Printf("Serving bot files to %s\n", r.RemoteAddr)
+	if _, err := os.Stat("bots.tar.gz"); err == nil {
+		http.ServeFile(w, r, "bots.tar.gz")
+	} else {
+		fmt.Fprintf(w, "no")
+	}
+}
+
 func HandleUnknown(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Unknown request. GET: /new or POST: /done")
+}
+
+func PrepFiles() {
+	//clear tmp
+	cmd := exec.Command("rm", "-r", "/tmp/bots")
+	err := cmd.Run()
+
+	//copy to tmp
+	cmd = exec.Command("cp", "-r", botsPath, "/tmp/bots")
+	err = cmd.Run()
+
+	//remove generics
+	cmd = exec.Command("sh", "prepScript.sh")
+	cmd.Run()
+
+	//tar it
+	cmd = exec.Command("tar", "-pcvzf", "bots.tar.gz", "-C", "/tmp/", "bots/")
+	err = cmd.Run()
+	//check for errors
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+}
+
+func printStatus() {
+	if debug {
+		return
+	}
+	cmd := exec.Command("clear")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+	fmt.Printf("%s Status:\n\n", strings.Split(dataPath, "/")[1])
+	fmt.Printf("ID\tCompleted\t Running\n")
+	for i := FIRST_WORKER; i <= LAST_WORKER; i++ {
+		fmt.Printf("%d\t%d\t\t|", i, workerCompleted[i])
+		for n := 0; n < workerTasks[i]; n++ {
+			fmt.Print("# ")
+		}
+		fmt.Println()
+	}
+	fmt.Println()
+	fmt.Printf("Requested: %d | Completed: %d | Running: %d | Remaining:%d \n", requestedGames, completedGames, runningGames, remainingGames)
+}
+
+func IPToWorkerID(ip string) int {
+	ip = strings.Split(ip, ":")[0]
+	ip = strings.Split(ip, ".")[3]
+	workerNum, err := strconv.Atoi(ip)
+	if err != nil {
+		log.Println("Atoi failed")
+	}
+	return workerNum
+}
+
+func GetWorkerIP(n int) string {
+	return fmt.Sprintf("dota%d@10.10.10.%d", n, n)
 }
 
 func PrintUsage(progName string) {
