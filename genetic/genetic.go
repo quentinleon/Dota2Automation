@@ -77,7 +77,7 @@ func MutateGeneRand(gene []float64, mutationRate float64, maxMutationPercent flo
 func main() {
 	gene := GetGeneFromFile("gene.lua")
 	fmt.Println(gene)
-	MutateGeneRand(gene, .2, .1)
+	MutateGeneRand(gene, .1, .1)
 	fmt.Println(gene)
 	WriteGeneToFile(gene, "result.txt")
 }
