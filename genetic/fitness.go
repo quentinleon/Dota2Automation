@@ -22,5 +22,6 @@ func CalcFitness(hero heroEvaluation) float64 {
 		score += (hero.gpm / 10) * 0.8
 		score += hero.xpm / 10
 	}
+
 	return score
 }
