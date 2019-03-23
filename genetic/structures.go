@@ -40,6 +40,5 @@ type Individual struct {
 }
 
 type Generation struct {
-	path       string
-	population []Individual
+	path string
 }

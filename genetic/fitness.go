@@ -1,6 +1,6 @@
 package main
 
-func CalcFitness(hero HeroEvaluation) float64 {
+func CalcFitness(hero *HeroEvaluation) float64 {
 	score := 0.0
 	score += hero.winRate * 1000
 	if hero.lane == mid {

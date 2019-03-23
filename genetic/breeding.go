@@ -61,3 +61,42 @@ func AverageBreed(a, b []float64) []float64 {
 	}
 	return gene
 }
+
+func refillGenes(dest *[][]float64, src *[][]float64) {
+	if len(*src) == 0 {
+		log.Fatal("source genes are empty")
+	}
+
+	*dest = make([][]float64, len(*src))
+	for i, v := range *dest {
+		v = make([]float64, len((*src)[i]))
+		copy(v, (*src)[i])
+	}
+}
+
+func mixIn(genes [][]float64, numberOfGenes int) [][]float64 {
+	if len(genes) < 2 {
+		log.Fatal("not enough genes")
+	}
+
+	src := rand.NewSource(time.Now().UnixNano())
+	rando := rand.New(src)
+	var nonReproducedGenes [][]float64
+	var result [][]float64
+	for i := 0; i < numberOfGenes; i++ {
+		if len(nonReproducedGenes) < 2 {
+			refillGenes(&nonReproducedGenes, &genes)
+			rando.Shuffle(len(nonReproducedGenes), func(i, j int) {
+				var temp float64
+				for k := range nonReproducedGenes[i] {
+					temp = nonReproducedGenes[i][k]
+					nonReproducedGenes[i][k] = nonReproducedGenes[j][k]
+					nonReproducedGenes[j][k] = temp
+				}
+			})
+		}
+		result = append(result, SpliceBreed(nonReproducedGenes[len(nonReproducedGenes)], nonReproducedGenes[len(nonReproducedGenes)-1]))
+		nonReproducedGenes = nonReproducedGenes[:len(nonReproducedGenes)-2]
+	}
+	return result
+}
