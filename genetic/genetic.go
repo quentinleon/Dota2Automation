@@ -5,6 +5,8 @@ import (
 	"strconv"
 )
 
+var Roaster = [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
+
 var gamesPerIndividual = 250
 var populationSize = 30
 var parents = 5
@@ -25,12 +27,11 @@ func main() {
 
 	testing := gen.path + "\\script_pool"
 	os.Mkdir(testing, 0777)
-	roaster := [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
 	for i := range scriptPool {
 		dir := testing + "\\" + strconv.FormatInt(int64(i), 10)
 		os.Mkdir(dir, 0777)
 		for j := 0; j < 5; j++ {
-			WriteGeneToFile(scriptPool[i][j], dir+"\\gene_"+roaster[j]+".lua")
+			WriteGeneToFile(scriptPool[i][j], dir+"\\gene_"+Roaster[j]+".lua")
 		}
 	}
 }

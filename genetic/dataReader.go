@@ -89,11 +89,11 @@ func ReadDotaFiles(fileDir string) ([5]HeroEvaluation, int) {
 	teamEval[2].lane = mid
 	teamEval[3].lane = carry
 	teamEval[4].lane = support
-	teamEval[0].heroName = "ogre_magi"
-	teamEval[1].heroName = "lich"
-	teamEval[2].heroName = "medusa"
-	teamEval[3].heroName = "chaos_knight"
-	teamEval[4].heroName = "bane"
+	teamEval[0].heroName = Roaster[0]
+	teamEval[1].heroName = Roaster[1]
+	teamEval[2].heroName = Roaster[2]
+	teamEval[3].heroName = Roaster[3]
+	teamEval[4].heroName = Roaster[4]
 
 	var winCount int32
 	var gameCount int32
@@ -185,7 +185,6 @@ func FindTop5(gen Generation) [5]Top5genes {
 	//bane
 	var geneResults [5]Top5genes
 
-	roaster := [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
 	fileDir, err := ioutil.ReadDir(gen.path)
 	if err != nil {
 		log.Fatal(err)
@@ -200,8 +199,8 @@ func FindTop5(gen Generation) [5]Top5genes {
 			if err != 1 {
 				fmt.Println(gen.path + "\\" + geneDir.Name() + ": no games were parsed")
 			} else {
-				for i := range roaster {
-					assignHeroData(&result[i], &geneResults[i], roaster[i], gen.path+"\\"+geneDir.Name())
+				for i := range Roaster {
+					assignHeroData(&result[i], &geneResults[i], Roaster[i], gen.path+"\\"+geneDir.Name())
 				}
 				geneDataNum++
 			}

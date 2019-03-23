@@ -78,9 +78,8 @@ func ConvertGeneData(ranking [5]Top5genes) [5][][]float64 {
 
 func WriteBestGenes(gen Generation, result [5][][]float64) {
 	bestGeneDir := gen.path + "\\best_genes"
-	roaster := [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
 	os.Mkdir(bestGeneDir, 0777)
 	for i := 0; i < 5; i++ {
-		WriteGeneToFile(result[i][0], bestGeneDir+"\\gene_"+roaster[i]+".lua")
+		WriteGeneToFile(result[i][0], bestGeneDir+"\\gene_"+Roaster[i]+".lua")
 	}
 }
