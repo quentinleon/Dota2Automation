@@ -15,15 +15,15 @@ func GetGeneFromFile(filename string) []float64 {
 	var gene []float64
 	rawdata, err := ioutil.ReadFile(filename)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("Could not read file", err)
 	}
 	data := string(rawdata)
 	lines := strings.Split(data, "\n")
 	for i := 0; i < len(lines); i++ {
 		numberStr := strings.Split(lines[i], "=")
 		if len(numberStr) > 1 && !strings.Contains(numberStr[1], "{") {
-			if strings.Contains(numberStr[1], ",") {
-				numberStr[1] = numberStr[1][:len(numberStr[1])-1]
+			if strings.Contains(numberStr[1], ",") || strings.Contains(numberStr[1], "\r") {
+				numberStr[1] = numberStr[1][:len(numberStr[1])-2]
 			}
 			if strings.Contains(numberStr[1], " ") {
 				numberStr[1] = numberStr[1][1:]
@@ -58,4 +58,29 @@ func WriteGeneToFile(gene []float64, filename string) {
 		}
 	}
 	file.Close()
+}
+
+//ogremagi
+//lich
+//medusa
+//chaosknight
+//bane
+func ConvertGeneData(ranking [5]Top5genes) [5][][]float64 {
+	var result [5][][]float64
+	for i := range ranking {
+		result[i] = make([][]float64, 5)
+		for j := 0; j < 5; j++ {
+			result[i][j] = GetGeneFromFile(ranking[i].gene[j].fileName)
+		}
+	}
+	return result
+}
+
+func WriteBestGenes(gen Generation, result [5][][]float64) {
+	bestGeneDir := gen.path + "\\best_genes"
+	roaster := [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
+	os.Mkdir(bestGeneDir, 0777)
+	for i := 0; i < 5; i++ {
+		WriteGeneToFile(result[i][0], bestGeneDir+"\\gene_"+roaster[i]+".lua")
+	}
 }

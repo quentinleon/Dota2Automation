@@ -1,7 +1,8 @@
 package main
 
 import (
-	"fmt"
+	"os"
+	"strconv"
 )
 
 var gamesPerIndividual = 250
@@ -9,52 +10,27 @@ var populationSize = 30
 var parents = 5
 
 func main() {
-	//gene := GetGeneFromFile("gene.lua")
-	//fmt.Println(gene)
-	//MutateGeneRand(gene, .1, .1)
-	//fmt.Println(gene)
-	//WriteGeneToFile(gene, "result.txt")
-	//fmt.Println(CalcFitness(1, 0.5, 0.28, 0.22, 450, 350))
-	teamEval := ReadFiles("D:\\Dota2AI\\Dota2Automation\\game1553219414")
-	fmt.Println(CalcFitness(teamEval.bane))
-	fmt.Println(CalcFitness(teamEval.chaosKnight))
-	fmt.Println(CalcFitness(teamEval.medusa))
-	fmt.Println(CalcFitness(teamEval.lich))
-	fmt.Println(CalcFitness(teamEval.ogreMagi))
+	var gen Generation
+	var genePool [5][][]float64
+	var scriptPool [][5][]float64
+	gen.path = "D:\\Dota2AI\\Dota2AutomationFork\\genetic\\data\\G1-Test"
+	top5 := FindTop5(gen)
+	convertedTop5 := ConvertGeneData(top5)
+	WriteBestGenes(gen, convertedTop5)
 
-	/*
-		a := []float64{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-		b := []float64{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	for i := 0; i < 5; i++ {
+		genePool[i] = MixIn(convertedTop5[i], populationSize)
+	}
+	scriptPool = CombineGenes(genePool)
 
-		c := SpliceBreed(a, b)
-
-		fmt.Println()
-		fmt.Println(a)
-		fmt.Println(b)
-		fmt.Println(c)
-
-		c = ShuffleBreed(a, b)
-
-		fmt.Println()
-		fmt.Println(a)
-		fmt.Println(b)
-		fmt.Println(c)
-
-		c = AverageBreed(a, b)
-
-		fmt.Println()
-		fmt.Println(a)
-		fmt.Println(b)
-		fmt.Println(c)
-
-		fmt.Println()
-		gene := GetGeneFromFile("gene.lua")
-		fmt.Println(gene)
-		MutateGeneRand(gene, .1, .1)
-		fmt.Println(gene)
-		WriteGeneToFile(gene, "result.txt")
-
-		fmt.Println()
-		fmt.Println(CalcMidFitness(1, 0.5, 0.28, 0.22, 450, 350))
-	*/
+	testing := gen.path + "\\script_pool"
+	os.Mkdir(testing, 0777)
+	roaster := [5]string{"ogre_magi", "lich", "medusa", "chaos_knight", "bane"}
+	for i := range scriptPool {
+		dir := testing + "\\" + strconv.FormatInt(int64(i), 10)
+		os.Mkdir(dir, 0777)
+		for j := 0; j < 5; j++ {
+			WriteGeneToFile(scriptPool[i][j], dir+"\\gene_"+roaster[j]+".lua")
+		}
+	}
 }

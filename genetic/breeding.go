@@ -16,7 +16,7 @@ func SpliceBreed(a, b []float64) []float64 {
 	rando := rand.New(src)
 	parentA := (rando.Float64() >= .5)
 	sliceLen := 0
-	for i := 0; i < len(a); i++ {
+	for i := range a {
 		if sliceLen == 0 {
 			parentA = !parentA
 			sliceLen = int(rando.Float64() * float64(len(a)) / 2)
@@ -68,15 +68,15 @@ func refillGenes(dest *[][]float64, src *[][]float64) {
 	}
 
 	*dest = make([][]float64, len(*src))
-	for i, v := range *dest {
-		v = make([]float64, len((*src)[i]))
-		copy(v, (*src)[i])
+	for i := range *dest {
+		(*dest)[i] = make([]float64, len((*src)[i]))
+		copy((*dest)[i], (*src)[i])
 	}
 }
 
-func mixIn(genes [][]float64, numberOfGenes int) [][]float64 {
+func MixIn(genes [][]float64, numberOfGenes int) [][]float64 {
 	if len(genes) < 2 {
-		log.Fatal("not enough genes")
+		log.Fatal("Less than one genes in pool")
 	}
 
 	src := rand.NewSource(time.Now().UnixNano())
@@ -95,8 +95,27 @@ func mixIn(genes [][]float64, numberOfGenes int) [][]float64 {
 				}
 			})
 		}
-		result = append(result, SpliceBreed(nonReproducedGenes[len(nonReproducedGenes)], nonReproducedGenes[len(nonReproducedGenes)-1]))
+		gene := SpliceBreed(nonReproducedGenes[len(nonReproducedGenes)-1], nonReproducedGenes[len(nonReproducedGenes)-2])
+		MutateGeneRand(gene, 0.1, 0.1)
+		result = append(result, gene)
 		nonReproducedGenes = nonReproducedGenes[:len(nonReproducedGenes)-2]
+	}
+	return result
+}
+
+func CombineGenes(genes [5][][]float64) [][5][]float64 {
+	if len(genes[0]) != len(genes[1]) || len(genes[1]) != len(genes[2]) ||
+		len(genes[2]) != len(genes[3]) || len(genes[3]) != len(genes[4]) {
+		log.Fatal("number of gene pool do not match with other heroes")
+	}
+	result := make([][5][]float64, len(genes[0]))
+	for i := range genes[0] {
+		for j := 0; j < 5; j++ {
+			result[i][j] = make([]float64, len(genes[j][i]))
+			for k := range result[i][j] {
+				result[i][j][k] = genes[j][i][k]
+			}
+		}
 	}
 	return result
 }
