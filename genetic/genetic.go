@@ -18,7 +18,7 @@ func main() {
 	teamEval := ReadFiles("D:\\Dota2AI\\Dota2Automation\\game1553219414")
 	fmt.Println(CalcFitness(teamEval.bane))
 	fmt.Println(CalcFitness(teamEval.chaosKnight))
-	fmt.Println(CalcFitness(teamEval.juggernaut))
+	fmt.Println(CalcFitness(teamEval.medusa))
 	fmt.Println(CalcFitness(teamEval.lich))
 	fmt.Println(CalcFitness(teamEval.ogreMagi))
 
