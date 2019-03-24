@@ -37,11 +37,13 @@ func urlPath(path string) string {
 func populateBotDir(body []byte) {
 	os.RemoveAll(homeDir + "/dota/game/dota/scripts/vscripts/bots")
 	if err := ioutil.WriteFile("/tmp/bots.tar.gz", body, 0644); err != nil {
+		postDone(err.Error())
 		panic(err)
 	}
 	cmd := exec.Command("tar", "xpf", "/tmp/bots.tar.gz", "-C", homeDir+"/dota/game/dota/scripts/vscripts/")
 	err := cmd.Run()
 	if err != nil {
+		postDone(err.Error())
 		panic(err)
 	}
 
@@ -51,11 +53,13 @@ func aquireBots() {
 	resp, err := http.Get(urlPath("bots"))
 	if err != nil {
 		fmt.Println(err)
+		postDone(err.Error())
 		os.Exit(1)
 	}
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err)
+		postDone(err.Error())
 		os.Exit(1)
 	}
 	if string(body) == "no" {
@@ -68,11 +72,13 @@ func requestStart() bool {
 	resp, err := http.Get(urlPath("new"))
 	if err != nil {
 		fmt.Println(err)
+		postDone(err.Error())
 		os.Exit(1)
 	}
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err)
+		postDone(err.Error())
 		os.Exit(1)
 	}
 	defer resp.Body.Close()
@@ -105,6 +111,7 @@ func runGame() {
 		out, err := exec.Command("/usr/local/bin/docker", "run", "-v", mountPath, "arwn/dota").Output()
 		if err != nil {
 			fmt.Println(err)
+			postDone(err.Error())
 			os.Exit(1)
 		}
 		//postDone(string(cmd)[:len(string(cmd))-1])
