@@ -76,7 +76,7 @@ func refillGenes(dest *[][]float64, src *[][]float64) {
 
 func MixIn(genes [][]float64, numberOfGenes int) [][]float64 {
 	if len(genes) < 2 {
-		log.Fatal("Less than one genes in pool")
+		log.Fatal("Less than two genes in pool")
 	}
 
 	src := rand.NewSource(time.Now().UnixNano())

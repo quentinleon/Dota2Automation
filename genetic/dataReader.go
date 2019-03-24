@@ -39,11 +39,11 @@ type rawGameData struct {
 }
 
 type rawTeamData struct {
-	Bane        rawHeroData `json:"npc_dota_hero_bane(3)"`
-	ChaosKnight rawHeroData `json:"npc_dota_hero_chaos_knight(81)"`
-	Medusa      rawHeroData `json:"npc_dota_hero_medusa(94)"`
-	Lich        rawHeroData `json:"npc_dota_hero_lich(31)"`
-	OgreMagi    rawHeroData `json:"npc_dota_hero_ogre_magi(84)"`
+	Bane         rawHeroData `json:"npc_dota_hero_bane(3)"`
+	SkeletonKing rawHeroData `json:"npc_dota_hero_skeleton_king(42)"`
+	Medusa       rawHeroData `json:"npc_dota_hero_medusa(94)"`
+	Jakiro       rawHeroData `json:"npc_dota_jakiro(64)"`
+	OgreMagi     rawHeroData `json:"npc_dota_hero_ogre_magi(84)"`
 }
 
 type rawHeroData struct {
@@ -114,9 +114,9 @@ func ReadDotaFiles(fileDir string) ([5]HeroEvaluation, int) {
 					}
 					totalMinutes := rawJSON.GameDuration / 60.0
 					addFields(&teamEval[0], &rawJSON.Goodguys.OgreMagi, totalMinutes)
-					addFields(&teamEval[1], &rawJSON.Goodguys.Lich, totalMinutes)
+					addFields(&teamEval[1], &rawJSON.Goodguys.Jakiro, totalMinutes)
 					addFields(&teamEval[2], &rawJSON.Goodguys.Medusa, totalMinutes)
-					addFields(&teamEval[3], &rawJSON.Goodguys.ChaosKnight, totalMinutes)
+					addFields(&teamEval[3], &rawJSON.Goodguys.SkeletonKing, totalMinutes)
 					addFields(&teamEval[4], &rawJSON.Goodguys.Bane, totalMinutes)
 				}
 			}
@@ -165,7 +165,7 @@ func (ranking Top5genes) Less(i, j int) bool {
 
 func assignHeroData(hero *HeroEvaluation, ranking *Top5genes, heroName string, geneDir string) {
 	var gene geneFile
-	gene.fileName = geneDir + "\\genes\\gene_" + heroName + ".lua"
+	gene.fileName = geneDir + "/genes/gene_" + heroName + ".lua"
 	gene.fitness = CalcFitness(hero)
 
 	if ranking.numberOfGenes < 5 {
@@ -177,7 +177,7 @@ func assignHeroData(hero *HeroEvaluation, ranking *Top5genes, heroName string, g
 	}
 }
 
-func FindTop5(gen Generation) [5]Top5genes {
+func FindTop5(path string) [5]Top5genes {
 	//ogremagi
 	//lich
 	//medusa
@@ -185,7 +185,7 @@ func FindTop5(gen Generation) [5]Top5genes {
 	//bane
 	var geneResults [5]Top5genes
 
-	fileDir, err := ioutil.ReadDir(gen.path)
+	fileDir, err := ioutil.ReadDir(path)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -193,14 +193,14 @@ func FindTop5(gen Generation) [5]Top5genes {
 	geneDataNum := 0
 	for _, geneDir := range fileDir {
 		if !geneDir.IsDir() {
-			fmt.Println(gen.path + geneDir.Name() + " is not a directory")
+			fmt.Println(path + geneDir.Name() + " is not a directory")
 		} else {
-			result, err := ReadDotaFiles(gen.path + "\\" + geneDir.Name() + "\\gamedata")
+			result, err := ReadDotaFiles(path + "/" + geneDir.Name() + "/gamedata")
 			if err != 1 {
-				fmt.Println(gen.path + "\\" + geneDir.Name() + ": no games were parsed")
+				fmt.Println(path + "/" + geneDir.Name() + ": no games were parsed")
 			} else {
 				for i := range Roaster {
-					assignHeroData(&result[i], &geneResults[i], Roaster[i], gen.path+"\\"+geneDir.Name())
+					assignHeroData(&result[i], &geneResults[i], Roaster[i], path+"/"+geneDir.Name())
 				}
 				geneDataNum++
 			}

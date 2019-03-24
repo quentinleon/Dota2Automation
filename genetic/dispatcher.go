@@ -42,19 +42,19 @@ func RunGames(numGames int, individualGenesPath string, botScriptPath string) {
 
 	//make data directory
 	if requestedGames > 0 {
-		dataPath := individualPath + "/gamedata"
+		dataPath = individualPath + "/gamedata"
 		os.Mkdir(dataPath, 0777)
 	}
 
 	//start server
 	fmt.Printf("Running %d DotA games...\n\n", requestedGames)
 	finished.Add(1)
-	go StartServer()
 
 	//spin up all clients
 	for i := FIRST_WORKER; i <= LAST_WORKER; i++ {
 		worker := GetWorkerIP(i)
 		fmt.Printf("Starting worker %s\n", worker)
+		//fmt.Println("ssh", worker, "./Dota2Automation/client/worker", IP_ADDR, strconv.Itoa(PORT), "&> /dev/null")
 		cmd := exec.Command("ssh", worker, "./Dota2Automation/client/worker", IP_ADDR, strconv.Itoa(PORT), "&> /dev/null")
 		err = cmd.Start()
 		if err != nil {
@@ -189,8 +189,4 @@ func IPToWorkerID(ip string) int {
 
 func GetWorkerIP(n int) string {
 	return fmt.Sprintf("dota%d@10.10.10.%d", n, n)
-}
-
-func PrintUsage(progName string) {
-	fmt.Println("Usage: " + progName + " <num games> [bot script folder path]")
 }
